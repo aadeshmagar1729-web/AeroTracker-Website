@@ -16,7 +16,7 @@ const Flight = () => {
     setError("");
 
     axios
-      .get(`http://localhost:5000/api/flight/${id}`)
+      .get(`https://aerotracker-website.onrender.com/api/flight/${id}`)
       .then((res) => {
         setFlightData(res.data);
         setLoading(false);
